@@ -8,7 +8,7 @@ function function1() {
             evenNumbers += i;
         }
     }
-    console.log(evenNumbers);
+    return evenNumbers;
 }
 
 function function2() {
@@ -20,11 +20,11 @@ function function2() {
             evenInverseNumbers += i;
         }
     }
-    console.log(evenInverseNumbers); 
+    return evenInverseNumbers; 
 }
 
-function1();
-function2();
+console.log(function1());
+console.log(function2());
 // Only change code above this line 
 module.exports = {
     function1,
