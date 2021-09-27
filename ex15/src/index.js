@@ -2,20 +2,19 @@
 function myDoWhile() {
     
     var myNumbers = "";
-    var i = -1;
+    var i = 0;
     
     do {
-        i++;
         if ( i != 9) {
             myNumbers += i + ", ";
         } else {
             myNumbers += i;
         }
-    } while (i < 9);
-    console.log(myNumbers);
+        i++;
+    } while (i <= 9);
+    return myNumbers;
 }
-
-myDoWhile();
+console.log(myDoWhile());
 // Only change code above this line 
 
 module.exports = myDoWhile;
